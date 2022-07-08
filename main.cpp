@@ -1899,7 +1899,7 @@ int main()
       // Delete & Create
       borra();
       // Estableciendo color de fondo
-      color(ROJO);
+      color(AZUL);
       rectangulo_lleno(0, 0, WIDTH, HEIGHT);
 
       // Check Player Alive & Paint if so

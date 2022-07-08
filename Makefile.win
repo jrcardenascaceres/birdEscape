@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Project: birdScape
+=======
+# Project: birdEscape
+>>>>>>> f57d52dacb5f64c36f095a92cf3b8f5029758daa
 # Makefile created by Dev-C++ 4.9.9.2
 
 CPP  = g++.exe
@@ -7,24 +11,39 @@ WINDRES = windres.exe
 RES  = 
 OBJ  = main.o miniwin.o $(RES)
 LINKOBJ  = main.o miniwin.o $(RES)
+<<<<<<< HEAD
 LIBS =  -L"lib" -mwindows  
 INCS =  -I"include" 
 CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include" 
 BIN  = birdScape.exe
+=======
+LIBS =  -L"lib" -mwindows "D:/Utp/Ciclo 6/Programacion de videojuegos C++/Semana 9/Dev-CppPortable/App/devcpp/lib/libwinmm.a"  
+INCS =  -I"include" 
+CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include" 
+BIN  = birdEscape.exe
+>>>>>>> f57d52dacb5f64c36f095a92cf3b8f5029758daa
 CXXFLAGS = $(CXXINCS)  
 CFLAGS = $(INCS)  
 RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
+<<<<<<< HEAD
 all: all-before birdScape.exe all-after
+=======
+all: all-before birdEscape.exe all-after
+>>>>>>> f57d52dacb5f64c36f095a92cf3b8f5029758daa
 
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
+<<<<<<< HEAD
 	$(CPP) $(LINKOBJ) -o "birdScape.exe" $(LIBS)
+=======
+	$(CPP) $(LINKOBJ) -o "birdEscape.exe" $(LIBS)
+>>>>>>> f57d52dacb5f64c36f095a92cf3b8f5029758daa
 
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
